@@ -1,17 +1,45 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import {makeStyles} from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
 import * as serviceWorker from './serviceWorker';
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        '& > *': {
-            margin: theme.spacing(1),
-        },
-    },
-}));
+function AboutMe(props) {
+  if (!props.warn) {
+    return null;
+  }
+
+  return (
+      <div>
+        Stuff About Me Will Go Here!
+      </div>
+  );
+}
+
+class AboutMeButton extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {showWarning: true};
+    this.handleToggleClick = this.handleToggleClick.bind(this);
+  }
+
+  handleToggleClick(){
+    this.setState(state => ({
+      showWarning: !state.showWarning
+    }));
+  }
+
+  render() {
+    return(
+        <div>
+          <button onClick={this.handleToggleClick}>
+            About Me
+          </button>
+          <AboutMe warn={this.state.showWarning} />
+        </div>
+    );
+  }
+}
+
 
 function App() {
     return (
@@ -20,11 +48,6 @@ function App() {
                 <h1>Koray Uymaz</h1>
                 <p class="lead">Interactive Resume</p>
             </div>
-            <Button variant="outlined">Default</Button>
-            <Button variant="outlined" onClick={() => {alert('clicked')}}>Click me</Button>
-            <div className="Work-history">
-                <h1>Work</h1>
-            </div>
         </div>
     );
 }
@@ -32,6 +55,7 @@ function App() {
 ReactDOM.render(
     <React.StrictMode>
         <App/>
+        <AboutMeButton/>
     </React.StrictMode>,
     document.getElementById('root')
 );

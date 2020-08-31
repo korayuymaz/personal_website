@@ -2,49 +2,73 @@
     text-align: center;
 }
 
-.Entry{
-  margin-right: auto;
-  margin-left: auto;
-  min-width: 1800px;
-  height: 635px;
-  padding-top: 20px;
-  background: no-repeat top center fixed url(me.png);
+.Entry {
+    height: 635px;
+    padding-top: 20px;
+    background: no-repeat top center fixed url(me.png);
+    text-align: center;
 }
 
-.Entry h1{
-  color: #f7f7f7;
+.Entry h1 {
+    color: #f7f7f7;
+    position: relative;
 }
 
-.Entry p{
-  color: #f7f7f7;
+.Entry p {
+    color: #f7f7f7;
+    position: relative;
 }
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-.Work-history {
-  margin-right: auto;
-  margin-left: auto;
-  min-width: 1800px;
-  height: 635px;
+@media (max-width: 480px) {
+    #div {
+        top: 50%; /* IMPORTANT */
+        left: 50%; /* IMPORTANT */
+        display: block;
+        position: absolute;
+        width: 750px;
+        height: 417px;
+
+        margin-top: -208.5px; /* HALF OF THE HEIGHT */
+        margin-left: -375px; /* HALF OF THE WIDTH */
+    }
 }
 
-.Work-history h1{
-  color: black;
+@media (max-width: 480px) {
+    .Work-history {
+        top: 50%; /* IMPORTANT */
+        left: 50%; /* IMPORTANT */
+        display: block;
+        position: absolute;
+        width: 750px;
+        height: 417px;
+
+        margin-top: -208.5px; /* HALF OF THE HEIGHT */
+        margin-left: -375px; /* HALF OF THE WIDTH */
+    }
 }
 
-.Work-history p{
-  color: black;
+.Work-history h1 {
+    color: black;
+}
+
+.Work-history p {
+    color: black;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
+.Button {
+    button-color: lightseagreen;
+}
