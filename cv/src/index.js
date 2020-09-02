@@ -2,60 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-
-function AboutMe(props) {
-  if (!props.warn) {
-    return null;
-  }
-
-  return (
-      <div>
-        Stuff About Me Will Go Here!
-      </div>
-  );
-}
-
-class AboutMeButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {showWarning: true};
-    this.handleToggleClick = this.handleToggleClick.bind(this);
-  }
-
-  handleToggleClick(){
-    this.setState(state => ({
-      showWarning: !state.showWarning
-    }));
-  }
-
-  render() {
-    return(
-        <div>
-          <button onClick={this.handleToggleClick}>
-            About Me
-          </button>
-          <AboutMe warn={this.state.showWarning} />
-        </div>
-    );
-  }
-}
-
-
-function App() {
-    return (
-        <div className="First-page">
-            <div className="Entry">
-                <h1>Koray Uymaz</h1>
-                <p class="lead">Interactive Resume</p>
-            </div>
-        </div>
-    );
-}
+import Page from "./components/Page";
 
 ReactDOM.render(
     <React.StrictMode>
-        <App/>
-        <AboutMeButton/>
+        <Page />
     </React.StrictMode>,
     document.getElementById('root')
 );
