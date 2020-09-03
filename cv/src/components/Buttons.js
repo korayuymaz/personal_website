@@ -1,7 +1,5 @@
 import React from 'react';
-import '../index.css';
-
-
+import '../styles/ButtonBox.css';
 function Abilities(props) {
     if (!props.ability) {
         return null;
@@ -55,7 +53,7 @@ class MyButtons extends React.Component {
         super(props);
         this.state = {
             showAbilities: false,
-            showStuffAboutMe: false,
+            showContact: false,
             showAboutMe: false,
             showWork: false
         };
@@ -103,25 +101,30 @@ class MyButtons extends React.Component {
 
     render() {
         return (
-            <div>
-                <button onClick={this.handleAbilitiesClick}>
-                    Abilities
-                </button>
-                <button onClick={this.handleAboutMeClick}>
-                    About Me
-                </button>
-                <button onClick={this.handleContactClick}>
-                    Contact Me
-                </button>
-                <button onClick={this.handleWorkClick}>
-                    Work History
-                </button>
-                <Abilities ability={this.state.showAbilities}/>
-                <AboutMe about_me={this.state.showAboutMe}/>
-                <ContactMe contact_me={this.state.showContact}/>
-                <WorkHistory work={this.state.showWork}/>
+            <div className="InformationPage">
+                <div className="ButtonBox">
+                    <button  class="btn draw-border" onClick={this.handleAbilitiesClick}>
+                        Abilities
+                    </button>
+                    <button class="btn draw-border"onClick={this.handleAboutMeClick}>
+                        About Me
+                    </button>
+                    <button class="btn draw-border" onClick={this.handleContactClick}>
+                        Contact Me
+                    </button>
+                    <button class="btn draw-border" onClick={this.handleWorkClick}>
+                        Work History
+                    </button>
+                </div>
+                <div className="ButtonText">
+                    <Abilities ability={this.state.showAbilities}/>
+                    <AboutMe about_me={this.state.showAboutMe}/>
+                    <ContactMe contact_me={this.state.showContact}/>
+                    <WorkHistory work={this.state.showWork}/>
+                </div>
             </div>
-        );
+    )
+        ;
     }
 }
 
