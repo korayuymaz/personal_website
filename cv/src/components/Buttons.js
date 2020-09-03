@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/ButtonBox.css';
+import '../styles/FancyButtons.css';
 function Abilities(props) {
     if (!props.ability) {
         return null;
@@ -102,18 +103,18 @@ class MyButtons extends React.Component {
     render() {
         return (
             <div className="InformationPage">
-                <div className="ButtonBox">
-                    <button  class="btn draw-border" onClick={this.handleAbilitiesClick}>
-                        Abilities
-                    </button>
-                    <button class="btn draw-border"onClick={this.handleAboutMeClick}>
+                <div>
+                    <button className="myButton" onClick={this.handleAboutMeClick}>
                         About Me
                     </button>
-                    <button class="btn draw-border" onClick={this.handleContactClick}>
-                        Contact Me
-                    </button>
-                    <button class="btn draw-border" onClick={this.handleWorkClick}>
+                    <button className="myButton" onClick={this.handleWorkClick}>
                         Work History
+                    </button>
+                    <button class="myButton" onClick={this.handleAbilitiesClick}>
+                        Abilities
+                    </button>
+                    <button class="myButton" onClick={this.handleContactClick}>
+                        Contact Me
                     </button>
                 </div>
                 <div className="ButtonText">

@@ -10,11 +10,8 @@
 }
 
 .ButtonText {
-    margin: 10px;
-    position: absolute;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    margin: 50px;
+    text-align: center;
 }
 
 .InformationPage {
