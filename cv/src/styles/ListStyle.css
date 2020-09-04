@@ -1,0 +1,36 @@
+ul.no-bullets {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+ul {
+}
+
+
+/*#abilities ul > li .ability-score {*/
+/*    color: #DFE0E0;*/
+/*    font-size: 14px;*/
+/*    -webkit-transition: all 0.3s;*/
+/*    -moz-transition: all 0.3s;*/
+/*    -o-transition: all 0.3s;*/
+/*    transition: all 0.3s;*/
+/*}*/
+
+/*#abilities ul > li .ability-title {*/
+/*    display: inline-block;*/
+/*    width: 60%;*/
+/*}*/
+
+li {
+}
+
+.ability-score{
+    padding-left: 25px;
+}
+
+/*.container {*/
+/*    padding-right: 15px;*/
+/*    padding-left: 15px;*/
+/*    margin-right: auto;*/
+/*    margin-left: auto;*/
+/*}*/

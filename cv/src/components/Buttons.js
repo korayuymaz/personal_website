@@ -1,14 +1,34 @@
 import React from 'react';
 import '../styles/ButtonBox.css';
 import '../styles/FancyButtons.css';
+import '../styles/ListStyle.css';
+import StarFilled from "./StarFilled";
+import StarNotFilled from "./StarNotFilled";
+
 function Abilities(props) {
     if (!props.ability) {
         return null;
     }
 
     return (
-        <div>
-            Stuff About My Abilities Will Go Here!
+        <div id="abilities" class="container">
+            <h2>Abilities</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="no-bullets">
+                        <li>
+                            <span class="ability-title">Bootstrap Framework</span>
+                            <span class="ability-score">
+                                <StarFilled />
+                                <StarFilled />
+                                <StarFilled />
+                                <StarFilled />
+                                <StarNotFilled />
+				            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     );
 }
@@ -124,8 +144,8 @@ class MyButtons extends React.Component {
                     <WorkHistory work={this.state.showWork}/>
                 </div>
             </div>
-    )
-        ;
+        )
+            ;
     }
 }
 
