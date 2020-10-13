@@ -1,33 +1,17 @@
-ul.no-bullets {
-    list-style-type: none;
-    padding-left: 0px;
+
+.grid-container {
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 25px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "ability score";
 }
-
-ul {
-}
-
-
-/*#abilities ul > li .ability-score {*/
-/*    color: #DFE0E0;*/
-/*    font-size: 14px;*/
-/*    -webkit-transition: all 0.3s;*/
-/*    -moz-transition: all 0.3s;*/
-/*    -o-transition: all 0.3s;*/
-/*    transition: all 0.3s;*/
-/*}*/
-
-/*#abilities ul > li .ability-title {*/
-/*    display: inline-block;*/
-/*    width: 60%;*/
-/*}*/
-
-li {
-}
-
-.ability-score{
-    padding-left: 25px;
-}
-
+.ability { grid-area: ability; }
+.score { grid-area: score; }
 /*.container {*/
 /*    padding-right: 15px;*/
 /*    padding-left: 15px;*/

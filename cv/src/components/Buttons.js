@@ -15,18 +15,18 @@ function Abilities(props) {
             <h2>Abilities</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <ul class="no-bullets">
-                        <li>
-                            <span class="ability-title">Bootstrap Framework</span>
-                            <span class="ability-score">
-                                <StarFilled />
-                                <StarFilled />
-                                <StarFilled />
-                                <StarFilled />
-                                <StarNotFilled />
-				            </span>
-                        </li>
-                    </ul>
+                    <div className="grid-container">
+                        <div className="ability">
+                            <span>Bootstrap Framework</span>
+                        </div>
+                        <div className="score">
+                                <StarFilled/>
+                                <StarFilled/>
+                                <StarFilled/>
+                                <StarFilled/>
+                                <StarNotFilled/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
