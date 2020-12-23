@@ -4,6 +4,7 @@ import './index.css';
 import 'font-awesome/css/font-awesome.min.css';
 import * as serviceWorker from './serviceWorker';
 import Page from "./components/Page";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
     <React.StrictMode>

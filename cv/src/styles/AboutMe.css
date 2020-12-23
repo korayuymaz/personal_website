@@ -1,0 +1,45 @@
+.button {
+    color: #dcecec;
+}
+
+.button i {
+    margin-right: 1vh;
+    font-size: 3vh;
+    color: #dcecec;
+}
+
+.button span {
+    color: #dcecec;
+}
+
+#profile-pic {
+    position: relative;
+    width: 20vh;
+    border-radius: 25%;
+    margin-right: 5vh;
+}
+
+#about-me {
+    width: 50%;
+}
+
+@media (max-width: 629px) {
+    div#profile-col {
+        display: none;
+    }
+
+    img#profile-pic {
+        position: relative;
+        width: 20vh;
+        border-radius: 25%;
+    }
+
+    div#about-me{
+        width: 85%;
+    }
+}
+
+.no-padding{
+    padding-left: 0vh  !important;
+}
+

@@ -1,0 +1,17 @@
+.grid-container {
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  display: grid;
+  grid-template-columns: 25vh 20vh;
+  grid-template-rows: 4vh;
+  gap: 1.5vh 1.5vh;
+  grid-template-areas:
+    "ability score";
+}
+.ability { grid-area: ability;}
+
+.ability span{
+  font-size: 2.2vh;
+}
+.score { grid-area: score; }

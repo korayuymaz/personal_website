@@ -1,13 +1,14 @@
 import React from "react";
 import Header from "./Header";
-import MyButtons from "./Buttons";
+import Social from "./Social";
+import "../styles/Page.css";
 
 
 function Page() {
     return (
-        <div>
+        <div class="Page">
             <Header/>
-            <MyButtons />
+            <Social/>
         </div>
     );
 }

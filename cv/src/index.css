@@ -1,23 +1,20 @@
-.First-page {
-    text-align: center;
-}
+/*!* Extra small devices (phones, 600px and down) *!*/
+/*@media only screen and (max-width: 600px) {...}*/
 
-.Entry {
-    height: 635px;
-    padding-top: 20px;
-    background: no-repeat top center fixed url(me.png);
-    text-align: center;
-}
+/*!* Small devices (portrait tablets and large phones, 600px and up) *!*/
+/*@media only screen and (min-width: 600px) {...}*/
 
-.Entry h1 {
-    color: #f7f7f7;
-    position: relative;
-}
+/*!* Medium devices (landscape tablets, 768px and up) *!*/
+/*@media only screen and (min-width: 768px) { div.example {*/
+/*    font-size: 80px;*/
+/*  }}*/
 
-.Entry p {
-    color: #f7f7f7;
-    position: relative;
-}
+/*!* Large devices (laptops/desktops, 992px and up) *!*/
+/*@media only screen and (min-width: 992px) {...}*/
+
+/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
+/*@media only screen and (min-width: 1200px) {...}*/
+
 
 body {
     margin: 0;
@@ -28,47 +25,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-@media (max-width: 480px) {
-    #div {
-        top: 50%; /* IMPORTANT */
-        left: 50%; /* IMPORTANT */
-        display: block;
-        position: absolute;
-        width: 750px;
-        height: 417px;
 
-        margin-top: -208.5px; /* HALF OF THE HEIGHT */
-        margin-left: -375px; /* HALF OF THE WIDTH */
-    }
-}
 
-@media (max-width: 480px) {
-    .Work-history {
-        top: 50%; /* IMPORTANT */
-        left: 50%; /* IMPORTANT */
-        display: block;
-        position: absolute;
-        width: 750px;
-        height: 417px;
-
-        margin-top: -208.5px; /* HALF OF THE HEIGHT */
-        margin-left: -375px; /* HALF OF THE WIDTH */
-    }
-}
-
-.Work-history h1 {
-    color: black;
-}
-
-.Work-history p {
-    color: black;
-}
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-.Button {
-    button-color: lightseagreen;
-}
